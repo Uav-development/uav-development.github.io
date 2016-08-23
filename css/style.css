@@ -794,6 +794,9 @@ input.nav-trigger-close {
     font-size: 1.25em !important;
     display: inline-block;
   }
+  .wsite-mobile-menu {
+    list-style: none;
+  }
   .wsite-mobile-menu a {
     color: #b5c0d1;
   }
@@ -1296,6 +1299,9 @@ div.paragraph ol li {
 .text-center {
   text-align: center;
 }
+.wsite-elements blockquote {
+  font-family: 'Montserrat', sans-serif;
+}
 .wsite-content-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
@@ -1303,4 +1309,15 @@ div.paragraph ol li {
 }
 #footer-wrap p {
   font-family: 'Montserrat', sans-serif;
+}
+.menu-id {
+  color: #24678d;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+}
+.menu-id a {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
 }
