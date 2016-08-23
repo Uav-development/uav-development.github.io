@@ -1,20 +1,147 @@
+::-webkit-input-placeholder {
+  color: #a9a9a9
+}
+:-ms-input-laceholder {
+  color: #a9a9a9
+}
+::-moz-placeholder {
+  color: #a9a9a9
+}
+:-moz-placeholder {
+  color: #a9a9a9
+}
+.wsite-image {
+  position: relative
+}
+.wsite-image a {
+  display: inline-block\9;
+  max-width: 100% \9
+}
+.wsite-image-border-none a img {
+  border-width: 0 !important
+}
+.wsite-logo {
+  display: inline-block;
+  vertical-align: top
+}
+.wsite-logo span {
+  vertical-align: top !important
+}
+hr.styled-hr {
+  background-color: #eee;
+  background-color: rgba(0, 0, 0, 0.13);
+  border: 0pt none;
+  color: #eee;
+  color: rgba(0, 0, 0, 0.13);
+  height: 1px;
+  margin: 0 auto;
+  text-align: center
+}
+.wsite-not-footer {
+  text-align: left
+}
+.wsite-multicol {
+  position: relative;
+  direction: ltr
+}
+.wsite-multicol-table {
+  position: relative;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important
+}
+.wsite-multicol-col {
+  vertical-align: top;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0;
+  -moz-box-sizing: border-box
+}
+html,
+body {
+  margin: 0;
+  padding: 0
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+a:hover,
+a:active {
+  outline: 0
+}
+img {
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic
+}
+label {
+  cursor: pointer
+}
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important
+  }
+  a,
+  a:visited {
+    text-decoration: underline
+  }
+  a[href]:after {
+    content: " (" attr(href) ")"
+  }
+  a[href^="#"]:after {
+    content: ""
+  }
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid
+  }
+  tr,
+  img {
+    page-break-inside: avoid
+  }
+  img {
+    max-width: 100% !important
+  }
+  p,
+  h2 {
+    orphans: 3;
+    widows: 3
+  }
+  h2 {
+    page-break-after: avoid
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ul,
 ol,
 li,
-h1,
 h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
 body,
 html,
 div.paragraph,
 blockquote,
-fieldset,
-input,
 iframe,
 img {
   margin: 0;
@@ -25,20 +152,11 @@ img {
 ul,
 ol,
 li,
-h1,
 h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
 body,
 html,
 p,
 blockquote,
-fieldset,
-input,
 iframe,
 img {
   margin: 0;
@@ -48,12 +166,6 @@ img {
 }
 a img {
   border: 0;
-}
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
 }
 html {
   width: 100%;
