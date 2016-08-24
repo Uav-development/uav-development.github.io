@@ -60,6 +60,10 @@ hr.styled-hr {
   padding: 0;
   -moz-box-sizing: border-box
 }
+.multicol-col {
+  width:50%;
+  padding:0 25px;
+}
 html,
 body {
   margin: 0;
@@ -1432,4 +1436,10 @@ div.paragraph ol li {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
+}
+.spacer {
+  height: 50px;
+}
+.multicol-table-wrap {
+  margin: 0 -25px;
 }
