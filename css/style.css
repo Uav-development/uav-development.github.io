@@ -296,7 +296,7 @@ blockquote {
 }
 #nav ul li a {
   display: block;
-  color: #b5c0d1;
+  color: #ff8000;
   padding: 1em .75em;
   font-size: 1.15em;
 }
@@ -553,7 +553,7 @@ input.nav-trigger-close {
     list-style: none;
   }
   .wsite-mobile-menu a {
-    color: #b5c0d1;
+    color: #ff8000;
   }
   .wsite-mobile-menu #active a,
   .wsite-mobile-menu a:focus {
