@@ -20,9 +20,20 @@
     style-src 'self' 'unsafe-inline' ;
     ">
 
-    <meta http-equiv="X-XSS-Protection"  content="1;mode=block">
+    <meta http-equiv="X-XSS-Protection"  content="1;mode=block" always>
+
+    <meta http-equiv="X-Content-Type-Options" content="'nosniff' always">
 
 </head>
+
+<script>
+if (top!=self)
+   {
+   top.location=self.location;
+   }
+</script>
+
+ 
 
 <body class="no-header-page wsite-page-index wsite-theme-light full-width-on">
 	<div class="body-wrap">
@@ -69,7 +80,7 @@
 							<a href="#intro">Introduction</a> | <a href="#imagecapture">How Do UAVs Capture Images</a> | <a href="#comparison">How Do Satellites Compared to UAVs</a> | <a href="#advantages">Advantages of UAV</a>
 						</h2>
 
-						<p><iframe src="https://a.tiles.mapbox.com/v4/mapbox.satellite,dnomadb.uav-sri-lanka.html?scroll_wheel_zoom=false&access_token=pk.eyJ1IjoiYnJ1bm9zYW4iLCJhIjoiY2owbnZhdzIzMDBnYzMzbjFxaXRza3B0OSJ9.EJJeztwCzDHKqi6YO2pbcw#21/7.08621/79.97627" width="100%" height="500 px"></iframe></p>
+						<p><iframe src="https://a.tiles.mapbox.com/v4/mapbox.satellite,dnomadb.uav-sri-lanka.html?scroll_wheel_zoom=false&access_token=pk.eyJ1IjoiYnJ1bm9zYW4iLCJhIjoiY2owbnZhdzIzMDBnYzMzbjFxaXRza3B0OSJ9.EJJeztwCzDHKqi6YO2pbcw#21/7.08621/79.97627" width="100%" height="500 px" sandbox = "allow-same-origin allow-scripts"></iframe></p>
 
 						<div class="paragraph">
 							<h3><a name="intro">Introduction</a></h3>
@@ -94,7 +105,7 @@
 						<div class="paragraph">
 							<h3><a name="comparison">How do Satellites compare to UAVS?</a></h3>
 
-							<iframe src="https://docs.google.com/spreadsheets/d/1n22VBZ4-tz0HzeSWyjiMqAZEb886pGeCKNzomKgQMQ4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="320"></iframe>
+							<iframe  src="https://docs.google.com/spreadsheets/d/1n22VBZ4-tz0HzeSWyjiMqAZEb886pGeCKNzomKgQMQ4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="320" sandbox = "allow-same-origin allow-scripts"></iframe>
 
 							<p><a class="note-link" href="https://docs.google.com/spreadsheets/d/1n22VBZ4-tz0HzeSWyjiMqAZEb886pGeCKNzomKgQMQ4/edit?usp=sharing" target="_blank">View Spreadsheet</a></p>
 
@@ -170,17 +181,17 @@
 
 								<p>UAVs can transport essential medicines, vaccines, blood and blood samples. Field testing is currently underway in Malawi and Rwanda, with related efforts in Papua New Guinea, Peru, Tanzania and the Philippines slated for late 2016 and 2017. These field tests are primarily focused on the transportation of medical-related payloads.</p>
 
-								<iframe src="https://docs.google.com/spreadsheets/d/1oXqHaTT22ajGKOFrf3YZMV6l6zKJO0YrMIaHslNylB4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="70%" height="520"></iframe>
+								<iframe src="https://docs.google.com/spreadsheets/d/1oXqHaTT22ajGKOFrf3YZMV6l6zKJO0YrMIaHslNylB4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="70%" height="520" sandbox = "allow-same-origin allow-scripts"></iframe>
 
 								<p><a class="note-link" href="https://docs.google.com/spreadsheets/d/1oXqHaTT22ajGKOFrf3YZMV6l6zKJO0YrMIaHslNylB4/edit?usp=sharing" target="_blank">View Spreadsheet</a></p>
 
-								<iframe src="https://docs.google.com/spreadsheets/d/1zKOg5MKemN4skVzrhtPmEQvLOlN5kNhTpq7EUXAUtQg/pubhtml?widget=true&amp;headers=false" width="80%" height="320"></iframe>
+								<iframe src="https://docs.google.com/spreadsheets/d/1zKOg5MKemN4skVzrhtPmEQvLOlN5kNhTpq7EUXAUtQg/pubhtml?widget=true&amp;headers=false" width="80%" height="320" sandbox = "allow-same-origin allow-scripts"></iframe>
 
 								<p><a class="note-link" href="https://docs.google.com/spreadsheets/d/1zKOg5MKemN4skVzrhtPmEQvLOlN5kNhTpq7EUXAUtQg/edit?usp=sharing" target="_blank">View Spreadsheet</a></p>
 							</div>
 
-							<p><iframe src="https://www.mapbox.com/bites/00124/?embed=true#19/-17.77455/168.31647" width=100%" height="500px"></iframe>
-							<div style="display:block;font-size:70%">The imagery collected by UAViators is owned by the Vanuatu government, published on Mapbox via our integration with Pix4D, and shared with the Humanitarian OpenStreetMap Team and Micromappers, whose volunteers trace roads and buildings and evaluate damage to individual structures</div></p>
+							<p><iframe src="https://www.mapbox.com/bites/00124/?embed=true#19/-17.77455/168.31647" width=100%" height="500px" sandbox = "allow-same-origin allow-scripts"></iframe>
+							<div style="display:block;font-size:70%" sandbox = "allow-same-origin allow-scripts">The imagery collected by UAViators is owned by the Vanuatu government, published on Mapbox via our integration with Pix4D, and shared with the Humanitarian OpenStreetMap Team and Micromappers, whose volunteers trace roads and buildings and evaluate damage to individual structures</div></p>
 
 						</div>
 					</div>
@@ -229,6 +240,8 @@
 		</div>
 
 	</div>
+ 
+ 
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 <script>if (!window.jQuery) { document.write('<script src="js/jquery.min.js"><\/script>'); }</script>
