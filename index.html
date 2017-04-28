@@ -11,7 +11,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
-	<meta http-equiv="Content-Security-Policy" content="default-src https:">
+	<meta http-equiv="Content-Security-Policy" content="
+	default-src 'self';
+    font-src 'self' https://fonts.gstatic.com;
+    frame-src 'self' https://a.tiles.mapbox.com https://docs.google.com/ https://www.mapbox.com;
+    img-src 'self';
+    script-src 'self'  https://ajax.googleapis.com 'unsafe-inline' ;
+    style-src 'self' 'unsafe-inline' ;
+    ">
 
 </head>
 
