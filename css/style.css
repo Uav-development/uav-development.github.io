@@ -124,18 +124,8 @@ label {
   }
 }
 
-.attribution {
-  background-color: rgba(255,255,255,0.5);
-  padding: 0 5px;
-  font-size: 12px;
-  line-height: 20px;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  float: right;
-  width: 344px;
-  position: relative;
-  top: -100px;
-  color: black;
-} 
+
+
 
 /* Common
 ------------------------------------------------------------------------------- */
@@ -707,11 +697,6 @@ input.nav-trigger-close {
   }
   .wsite-form-field {
     max-width: none;
-  }
-
-
-  .attribution {
-    display: none;
   }
 }
 
