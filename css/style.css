@@ -563,7 +563,7 @@ input.nav-trigger-close {
     left: -350px;
     width: 350px;
     height: 100%;
-    padding: 2em 1.5em;
+    padding: 5em 1.5em;
     overflow-y: auto;
     z-index: 0;
     box-sizing: border-box;
@@ -784,7 +784,8 @@ div.paragraph ol li {
 }
 .fast-nav {
   color: #3f3f3f;
-  font-size: 16px;
+  font-size: 16px !important;
+  line-height: 20px;
 }
 
 .fast-nav a {
