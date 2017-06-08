@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Andes-Regular";
+    src: url('font/andes-regular-webfont.woff2') format('woff2'),
+         url('font/andes-regular-webfont.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: "Andes-Bold";
+    src: url('font/andes-bold-webfont.woff2') format('woff2'),
+         url('font/andes-bold-webfont.woff') format('woff');
+}
+
 ::-webkit-input-placeholder {
   color: #a9a9a9
 }
@@ -25,8 +38,18 @@
   vertical-align: top
 }
 .wsite-logo span {
-  vertical-align: top !important
+  vertical-align: top !important;
 }
+
+.title {
+  font-family: 'Andes-Bold', serif ;
+  color: #002244;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Andes-Bold', serif ;
+}
+
 hr.styled-hr {
   background-color: #eee;
   background-color: rgba(0, 0, 0, 0.13);
@@ -177,7 +200,7 @@ body {
   font-weight: normal;
   line-height: 1;
   background: #ffffff;
-  color: #415161;
+  color: #002244;
   -webkit-font-smoothing: antialiased;
 }
 .body-wrap {
@@ -268,7 +291,7 @@ blockquote {
 #logo {
   font-size: 2.75em;
   font-weight: bold;
-  color: #415161;
+  color: #002244;
   text-transform: uppercase;
   text-align: center;
   padding: 1em 0 .5em;
@@ -299,13 +322,13 @@ blockquote {
 }
 #nav ul li a {
   display: block;
-  color: #ff8000;
+  color: #009FDA;
   padding: 1em .75em;
   font-size: 1.15em;
 }
 #nav ul li#active a,
 #nav ul li a:hover {
-  color: #415161;
+  color: #002244;
 }
 .stuck {
   position: fixed !important;
@@ -327,7 +350,7 @@ body.full-width-off .stuck {
   border: 0;
 }
 #wsite-menus .wsite-menu li a:hover {
-  color: #415161;
+  color: #002244;
   background: #f9fafb;
 }
 #wsite-menus .wsite-menu-arrow {
@@ -380,7 +403,7 @@ input.nav-trigger-close {
 }
 #footer-wrap {
   border-top: 1px solid #e6e9eb;
-  color: #415161;
+  color: #002244;
   font-size: .85em;
 }
 .wsite-footer {
@@ -484,6 +507,7 @@ input.nav-trigger-close {
     font-size: 1em !important;
     line-height: 1 !important;
   }
+
   #header-wrap {
     border-bottom: 1px solid #e6e9eb;
     top: 0 !important;
@@ -528,7 +552,7 @@ input.nav-trigger-close {
     width: 20px;
     position: relative;
     margin: 0 auto 5px;
-    background: #415161;
+    background: #002244;
   }
   .nav-trigger span.mobile:last-child {
     margin-bottom: 0;
@@ -556,7 +580,7 @@ input.nav-trigger-close {
     list-style: none;
   }
   .wsite-mobile-menu a {
-    color: #ff8000;
+    color: #009FDA;
   }
   .wsite-mobile-menu #active a,
   .wsite-mobile-menu a:focus {
@@ -736,7 +760,7 @@ div.paragraph ol li {
 .wsite-content-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
-  color: #c2743b;
+  color: #F78D28;
 }
 #footer-wrap p {
   font-family: 'Montserrat', sans-serif;
@@ -762,6 +786,11 @@ div.paragraph ol li {
   color: #3f3f3f;
   font-size: 16px;
 }
+
+.fast-nav a {
+  color:#009FDA;
+}
+
 .paragraph h3 {
   font-size: 24px;
 }
@@ -822,7 +851,7 @@ div.paragraph ol li {
 }
 
 h4 {
-  color: #c2743b;
+  color: #F78D28;
   font-size: 18px;
   font-weight: 400;
 }
