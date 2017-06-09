@@ -18,10 +18,27 @@
     frame-src 'self' https://a.tiles.mapbox.com https://docs.google.com/ https://www.mapbox.com;
     img-src 'self';
     script-src 'self'  https://ajax.googleapis.com 'unsafe-inline' ;
-    style-src 'self' 'unsafe-inline' ;
+    style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline' ;
     ">
+
+    <meta http-equiv="Access-Control-Allow-Origin" content="Origin">
+    <meta http-equiv="X-XSS-Protection"  content="1;mode=block" always>
+    <meta http-equiv="X-Content-Type-Options" content="'nosniff' always">
     
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<meta name="referrer" content="no-referrer" />
+	
 </head>
+
+<script>
+if (top!=self)
+   {
+   top.location=self.location;
+   }
+</script>
 
 <body class="no-header-page wsite-page-sectors wsite-theme-light full-width-on">
 	<div class="body-wrap">
