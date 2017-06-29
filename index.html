@@ -34,14 +34,13 @@
 </head>
 
 <script>
-if (top!=self)
-   {
-   top.location=self.location;
-   }
+if (self == top) {
+  var theBody = document.getElementsByTagName('body')[0];
+  theBody.style.display = "block";
+} else {
+  top.location = self.location;
+}
 </script>
-
-
-
 
 <body class="no-header-page wsite-page-index wsite-theme-light full-width-on">
 	<div class="body-wrap">

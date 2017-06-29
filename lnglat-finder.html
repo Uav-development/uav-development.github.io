@@ -14,10 +14,12 @@
 <body>
 
 <script>
-if (top!=self)
-   {
-   top.location=self.location;
-   }
+if (self == top) {
+  var theBody = document.getElementsByTagName('body')[0];
+  theBody.style.display = "block";
+} else {
+  top.location = self.location;
+}
 </script>
 
 <style type='text/css'>
